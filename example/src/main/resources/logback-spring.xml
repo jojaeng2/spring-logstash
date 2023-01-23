@@ -11,16 +11,7 @@
   <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
     <destination>localhost:4560</destination>
     <encoder class="net.logstash.logback.encoder.LogstashEncoder">
-      <includeMdcKeyName>hello1</includeMdcKeyName>
-      <includeMdcKeyName>hello2</includeMdcKeyName>
-      <includeMdcKeyName>hello3</includeMdcKeyName>
-      <includeMdcKeyName>hello4</includeMdcKeyName>
-      <includeMdcKeyName>hello5</includeMdcKeyName>
-
-      <customFields>
-
-      </customFields>
-
+      <includeMdcKeyName>Method</includeMdcKeyName>
     </encoder>
   </appender>
 
